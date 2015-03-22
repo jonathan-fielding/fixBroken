@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# Pre-commit hooks
+
+# Compile after pull
+PATH="/usr/local/bin:$PATH"
+grunt

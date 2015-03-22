@@ -1,0 +1,10 @@
+{
+  "name": "package",
+  "version": "0.0.0",
+  "dependencies": {
+    "SimpleStateManager": "~2.1.0",
+    "jquery": "~1.10.2",
+    "modernizr": "~2.7.1",
+    "SASS-Template": "*"
+  }
+}

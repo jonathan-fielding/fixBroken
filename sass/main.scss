@@ -1,0 +1,14 @@
+//Declare the site variables
+@import "_partials/variables";
+
+//Import h5bp
+@import "../bower_components/SASS-Template/sass/_h5bp/normalize";
+@import "../bower_components/SASS-Template/sass/_h5bp/h5bp";
+
+//Custom typography rules
+@import "_partials/typography";
+
+//YOUR STYLES GO HERE
+
+//Import h5bp helpers at the end
+@import "../bower_components/SASS-Template/sass/_h5bp/helpers";
