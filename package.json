@@ -1,6 +1,6 @@
 {
-	"name": "package",
-	"version": "0.0.0",
+	"name": "fixbroken.js",
+	"version": "0.0.1",
 	"dependencies": {
 		"grunt": "~0.4.1",
 		"grunt-contrib-watch": "~0.5.2",

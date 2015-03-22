@@ -1,3 +1,1 @@
-(function(){
-	console.log('hello world');
-})();
+fixImages.init();

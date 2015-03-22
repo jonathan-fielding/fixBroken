@@ -6,7 +6,7 @@ module.exports = function (grunt) {
         uglify: {
             build: {
                 files: {
-                    
+                    'dist/fixBroken.min.js': 'src/fixBroken.js'
                 }
             }
         },
@@ -49,21 +49,6 @@ module.exports = function (grunt) {
             all: ['scripts/main.js']
         },
 
-        clean: {
-            // Clean any pre-commit hooks in .git/hooks directory
-            precommit: ['.git/hooks/pre-commit'],
-            pull: ['.git/hooks/post-merge']
-        },
-
-        shell: {
-            precommit: {
-                command: 'cp git-hooks/pre-commit .git/hooks/'
-            },
-            pull: {
-                command: 'cp git-hooks/post-merge .git/hooks/'
-            }
-        },
-
         notify: {
             compass: {
               options: {
@@ -81,12 +66,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-notify');
 
     // Default task(s)
     grunt.registerTask('default', ['compass:dev']);
-    grunt.registerTask('setup', ['clean:precommit','shell:precommit','clean:pull','shell:pull']);
     grunt.registerTask('live', ['jshint', 'uglify', 'compass:live']);
 };

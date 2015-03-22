@@ -1,7 +1,0 @@
-#!/bin/sh
-#
-# Pre-commit hooks
-
-# Lint stuff before committing
-PATH="/usr/local/bin:$PATH:/usr/local/share/npm/bin:$PATH"
-grunt jshint
